@@ -7,7 +7,9 @@ import org.junit.Test;
 import com.usjt.sce.model.Livro;
 
 public class UC01CadastrarLivro {
-
+/**
+ * Objetivo - verificar o comportamento do sistema no cadastro de livro com dados validos
+ */
 	@Test
 	public void CT01CadastrarLivroComDadosValidos() {
 		try {
@@ -20,6 +22,9 @@ public class UC01CadastrarLivro {
 			fail("nao deve falhar");
 		}
 	}
+/**
+ * Objetivo - verificar o comportamento do sistema no cadastro de livro com isbn branco
+ */
 	@Test
 	public void CT02CadastrarLivroComISBNBranco() {
 		try {
